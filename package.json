@@ -4,8 +4,8 @@
   "description": "Slack bot using:",
   "main": "app.js",
   "scripts": {
-      "start": "node app.js",
-      "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,10 @@
   "bugs": {
     "url": "https://github.com/CBXZero/MTGFetchBot/issues"
   },
-  "dependencies" : {
-    "tutor" : "*",
-    "jquery" : "*",
-    "slack-client" : "v1.5.1"
+  "dependencies": {
+    "@slack/client": "^3.8.1",
+    "botkit": "^0.4.9",
+    "jquery": "*",
+    "tutor": "*"
   }
 }

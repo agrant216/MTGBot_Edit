@@ -1,4 +1,4 @@
-var Slack = require('slack-client');
+var Slack = require('@slack/client');
 var tutor = require('tutor');
 var $ = require('jquery');
 
