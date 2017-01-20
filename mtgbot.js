@@ -11,7 +11,7 @@ var bot = controller
 var last_card = '';
 
 controller.hears(['{{(.*)}}'], 'direnct_mention,mention,ambient', function (bot, message) {
-    var cardText = message.match1[1];
+    var cardText = message.match[1];
     bot
         .api
         .reactions
@@ -30,7 +30,7 @@ controller.hears(['{{(.*)}}'], 'direnct_mention,mention,ambient', function (bot,
                     }
                     console.log(last_card);
                     last_card = card;
-                    bot.replay(message, card.image_url);
+                    bot.reply(message, card.image_url);
                 });
         } catch (e) {
             console.log("Couldn't find " + cardText);
