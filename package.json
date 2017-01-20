@@ -1,5 +1,5 @@
 {
-  "name": "MTGFetchBot",
+  "name": "mtgbot",
   "version": "0.1.0",
   "description": "Slack bot using:",
   "main": "app.js",
